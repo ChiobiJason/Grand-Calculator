@@ -91,7 +91,10 @@ function switchToDegrees() {
 }
 
 function calculateNaturalLog() {
-  document.getElementById("display").value += "Math.log(";
+  let displayValue = document.getElementById("display").value;
+  let result = Math.log(displayValue);
+  previousAnswerValue = result;
+  document.getElementById("display").value = result;
 }
 
 function inputPi() {
@@ -117,11 +120,10 @@ function solution() {
     .replace(/cos\(/g, "Math.cos(")
     .replace(/tan\(/g, "Math.tan(")
     .replace(/sqrt\(/g, "Math.sqrt(")
-    .replace(/ln\(/g, "Math.log(")
     .replace(/log\(/g, "Math.log10(")
     .replace(/π/g, "Math.PI")
     .replace(/e/g, "Math.E");
-
+  console.log(expression);
   try {
     if (isRadians) {
       result = eval(expression);
