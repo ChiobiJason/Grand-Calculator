@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/basicCalculator.css">
+  <script src="js/calculator.js"></script>
+  <meta charset="UTF-8" @>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basic Calculator</title>
+</head>
+
+<body class="body">
+  <div class="container">
+    <div>
+      <div class="displaybox">
+        <form>
+          <input type="text" id="display" class="inputdisplay">
+        </form>
+      </div>
+    </div>
+    <form>
+      <div class="buttonclass">
+        <input type="button" id="ac" class="button" value="AC" onclick="allClear()">
+        <input type="button" id="c" class="button double" value="C" onclick="removeOne()">
+        <input type="button" id="division" class="button signs" value="/" onclick="divisionx()">
+        <input type="button" id="eight" class="button numbers" value="8" onclick="inputNumber(8)">
+        <input type="button" id="seven" class="button numbers" value="7" onclick="inputNumber(7)">
+        <input type="button" id="nine" class="button numbers" value="9" onclick="inputNumber(9)">
+        <input type="button" id="x" class="button signs" value="x" onclick="multiply()">
+        <input type="button" id="four" class="button numbers" value="4" onclick="inputNumber(4)">
+        <input type="button" id="five" class="button numbers" value="5" onclick="inputNumber(5)">
+        <input type="button" id="six" class="button numbers" value="6" onclick="inputNumber(6)">
+        <input type="button" id="minus" class="button signs" value="-" onclick="subtract()">
+        <input type="button" id="one" class="button numbers" value="1" onclick="inputNumber(1)">
+        <input type="button" id="two" class="button numbers" value="2" onclick="inputNumber(2)">
+        <input type="button" id="three" class="button numbers" value="3" onclick="inputNumber(3)">
+        <input type="button" id="plus" class="button signs" value="+" onclick="addition()">
+        <input type="button" id="zero" class="button double" value="0" onclick="inputNumber(0)">
+        <input type="button" id="dot" class="button numbers" value="." onclick="addDot()">
+        <input type="button" id="equals" class="button signs" value="=" onclick="solution()">
+      </div>
+    </form>
+    <a href="index.html" class="homebutton">Home</a>
+  </div>
+
+</body>
+
+</html>

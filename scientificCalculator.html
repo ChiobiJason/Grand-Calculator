@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="js/calculator.js"></script>
+  <link rel="stylesheet" href="css/scientificCalculator.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scientific Calculator</title>
+</head>
+
+<body class="body">
+  <div class="container">
+    <div>
+      <div class="displaybox">
+        <form>
+          <input type="text" id="display" class="inputdisplay" />
+        </form>
+      </div>
+    </div>
+    <form>
+      <div class="buttonclass">
+        <input type="button" value="C" id="clear" class="button signs" onclick="removeOne()" />
+        <input type="button" value="AC" id="ac" class="button" onclick="allClear()" />
+        <input type="button" value="Ans" id="ans" class="button double" onclick="previousAnswer()" />
+        <input type="button" value="/" id="division" class="button signs" onclick="divisionx()" />
+        <input type="button" value="7" id="seven" class="button numbers" onclick="inputNumber(7)" />
+        <input type="button" value="8" id="eight" class="button numbers" onclick="inputNumber(8)" />
+        <input type="button" value="9" id="nine" class="button numbers" onclick="inputNumber(9)" />
+        <input type="button" value="x" id="x" class="button signs" onclick="multiply()" />
+        <input type="button" value="4" id="four" class="button numbers" onclick="inputNumber(4)" />
+        <input type="button" value="5" id="five" class="button numbers" onclick="inputNumber(5)" />
+        <input type="button" value="6" id="six" class="button numbers" onclick="inputNumber(6)" />
+        <input type="button" value="-" id="minus" class="button signs" onclick="subtract()" />
+        <input type="button" value="1" id="one" class="button numbers" onclick="inputNumber(1)" />
+        <input type="button" value="2" id="two" class="button numbers" onclick="inputNumber(2)" />
+        <input type="button" value="3" id="three" class="button numbers" onclick="inputNumber(3)" />
+        <input type="button" value="+" id="plus" class="button signs" onclick="addition()" />
+        <input type="button" value="0" id="zero" class="button double" onclick="inputNumber(0)" />
+        <input type="button" value="." id="dot" class="button numbers" onclick="addDot()" />
+        <input type="button" value="=" id="equals" class="button signs" onclick="solution()" />
+        <input type="button" value="(" id="bracketleft" class="button double" onclick="addBracket('(')" />
+        <input type="button" value=")" id="bracketright" class="button double" onclick="addBracket(')')" />
+
+        <input type="button" value="Rad" id="rad" class="button signs" onclick="switchToRadians()" />
+        <input type="button" value="Deg" id="deg" class="button signs" onclick="switchToDegrees()" />
+        <input type="button" value="x!" id="factorial" class="button signs" onclick="calculateFactorial()" />
+        <input type="button" value="Inv" id="inv" class="button signs" onclick="calculateInverse()" />
+        <input type="button" value="Sin" id="sin" class="button signs" onclick="calculateSine()" />
+        <input type="button" value="Ln" id="ln" class="button signs" onclick="calculateNaturalLog()" />
+        <input type="button" value="π" id="pi" class="button signs" onclick="inputPi()" />
+        <input type="button" value="Cos" id="cos" class="button signs" onclick="calculateCosine()" />
+        <input type="button" value="Log" id="log" class="button signs" onclick="calculateLog()" />
+        <input type="button" value="e" id="e" class="button signs" onclick="inputE()" />
+        <input type="button" value="Tan" id="tan" class="button signs" onclick="calculateTangent()" />
+        <input type="button" value="√" id="sqrt" class="button signs" onclick="calculateSquareRoot()" />
+        <input type="button" value="%" id="percentage" class="button signs" onclick="calculatePercentage()" />
+        <input type="button" value="Exp" id="exp" class="button signs" onclick="calculateExponential()" />
+      </div>
+    </form>
+    <a href="index.html" class="homebutton">Home</a>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+}
+.body {
+    text-align: center;
+    background-color: #e0f4ff;
+  }
+.container {
+    margin-top: 20px;
+    position: static;
+    display: inline-block;
+    overflow: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: right;
+    
+  }
+  .inputdisplay {
+    padding-right: 30px;
+    text-align: right;
+    font-size: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 850px;
+    height: 105px;
+    border-top-width: 0px;
+    border-right-width: 0px; 
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 5px;
+    box-shadow: 3px 1px 20px 13px hsla(209, 100.00%, 79.11%, 0.20);
+    color: rgb(0, 0, 0);
+  }
+  div {
+    margin-top: 45px;
+  }
+  .buttonclass {
+    display: grid;
+    grid-gap: 5px;
+  }
+  #ac {grid-row: 1; grid-column: 1;}
+  #clear {grid-row: 1; grid-column: 2;}
+  #percentage {grid-row: 2; grid-column: 5;}
+  #division {grid-row: 2; grid-column: 1;}
+  #seven {grid-row: 2; grid-column: 2;}
+  #eight {grid-row: 2; grid-column: 3;}
+  #nine {grid-row: 2; grid-column: 4;}
+  #x {grid-row: 3; grid-column: 1;}
+  #four {grid-row: 3; grid-column: 2;}
+  #five {grid-row: 3; grid-column: 3;}
+  #six {grid-row: 3; grid-column: 4;}
+  #minus {grid-row: 4; grid-column: 1;}
+  #one {grid-row: 4; grid-column: 2;}
+  #two {grid-row: 4; grid-column: 3;}
+  #three {grid-row: 4; grid-column: 4;}
+  #plus {grid-row: 5; grid-column: 1;}
+  #zero {grid-row: 5; grid-column: 3;}
+  #dot {grid-row: 5; grid-column: 4;}
+  #equals {grid-row: 5; grid-column: 2;}
+  #bracketleft {grid-row: 1; grid-column: 3;}
+  #bracketright {grid-row: 1; grid-column: 4;}
+  #rad {grid-row: 1; grid-column: 5;}
+  #deg {grid-row: 1; grid-column: 6;}
+  #factorial {grid-row: 1; grid-column: 7;}
+  #inv {grid-row: 5; grid-column: 7;}
+  #sin {grid-row: 2; grid-column: 6;}
+  #ln {grid-row: 2; grid-column: 7;}
+  #pi {grid-row: 3; grid-column: 5;}
+  #cos {grid-row: 3; grid-column: 6;}
+  #log {grid-row: 3; grid-column: 7;}
+  #e {grid-row: 4; grid-column: 5;}
+  #tan {grid-row: 4; grid-column: 6;}
+  #sqrt {grid-row: 4; grid-column: 7;}
+  #ans {grid-row: 5; grid-column: 5;}
+  #exp {grid-row: 5; grid-column: 6;}
+  
+
+  
+  .button {
+    margin-right: 20px;
+    margin-left: 20px;
+    grid-row: 1;
+    position: static;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #e0f4ff;
+    color:black;
+    font-size: 28px;
+    text-align: center;
+    text-decoration: none;
+    border-color: transparent;
+    cursor: pointer;
+    
+  }
+  .button:hover, .button.double:hover, .button.numbers:hover, .button.signs:hover {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+  }
+
+  .button.double {
+    cursor: pointer;
+    background-color: #e0f4ff;
+    color: black;
+  }
+  
+  .button.numbers {
+    cursor: pointer;
+    background-color:white;
+    color: black;
+    text-align: center;
+  }
+  
+  .button.signs {
+    cursor: pointer;
+    background-color: #ade2ff;
+    color: black;
+  }
+  .homebutton {
+    background-color: #000000;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+  }
+  .homebutton:hover {
+    background-color: blue;
+  }
+  @media screen and (max-width: 600px) {
+    .inputdisplay {
+      font-size: 20px; 
+      width: 90%; 
+    }
+    .button {
+      font-size: 18px; 
+      padding: 10px;
+    }
+    .homebutton {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .container {
+      width: 100%; 
+      box-sizing: border-box;
+    }
+    #rad {grid-row: 6; grid-column: 1;}
+    #deg {grid-row: 6; grid-column: 2;}
+    #factorial {grid-row: 6; grid-column: 3;}
+    #inv {grid-row: 6; grid-column: 4;}
+    #sin {grid-row: 7; grid-column: 1;}
+    #ln {grid-row: 7; grid-column: 2;}
+    #pi {grid-row: 7; grid-column: 3;}
+    #cos {grid-row: 7; grid-column: 4;}
+    #log {grid-row: 8; grid-column: 1;}
+    #e {grid-row: 8; grid-column: 2;}
+    #tan {grid-row: 8; grid-column: 3;}
+    #sqrt {grid-row: 8; grid-column: 4;}
+    #ans {grid-row: 9; grid-column: 1;}
+    #exp {grid-row: 9; grid-column: 2;}
+    #percentage{grid-row: 5; grid-column: 2;}
+    #equals {grid-row: 9; grid-column: 3/span 2;}
+  }
+  .buttonclass {
+    display: grid;
+    grid-gap: 0px;
+  }
+  
+  
